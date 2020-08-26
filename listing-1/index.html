@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Funktioniert weil vue@next auf die vollumfängliche Version von Vue 3 zurueckgreift, in der auch der Runtime Compiler enthalten ist: -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Fuehrt zu Problemen weil "Inline Templating" in der schlanken Runtime-Version von Vue nicht funktioniert: -->
+    <!-- <script src="https://unpkg.com/vue@3.0.0-rc.7/dist/vue.runtime.global.js"></script> -->
+    <title>Listing 1</title>
+</head>
+<body>
+<div id="counter">
+    <h1>Counter: {{ counter }}</h1>
+</div>
+</body>
+<script>
+    const Counter = {
+        data() {
+            return {
+                counter: 0
+            }
+        },
+        mounted() {
+            setInterval(() => {
+                this.counter++
+            }, 1000)
+        }
+    }
+    Vue.createApp(Counter).mount('#counter')
+</script>
+</html>

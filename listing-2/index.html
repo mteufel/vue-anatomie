@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Funktioniert weil vue@next auf die vollumfängliche Version von Vue 3 zurueckgreift, in der auch der Runtime Compiler enthalten ist: -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Fuehrt weiterhin zu Problemen, weil Markup aus der Template-Property ebenfalls zur Laufzeit kompiliert werden muss: -->
+    <!-- <script src="https://unpkg.com/vue@3.0.0-rc.7/dist/vue.runtime.global.js"></script> -->
+    <title>Listing 2</title>
+</head>
+<body>
+<div id="counter">
+    <!-- Dieses Markup wird tatsaechlich zur Laufzeit komplett ausgetauscht -->
+    <h1>Counter: {{ counter }}</h1>
+</div>
+</body>
+<script>
+    const Counter = {
+        template: 'Counter: {{ counter }}',
+        data() {
+            return {
+                counter: 0
+            }
+        },
+        mounted() {
+            setInterval(() => {
+                this.counter++
+            }, 1000)
+        }
+    }
+    Vue.createApp(Counter).mount('#counter')
+</script>
+</html>
