@@ -23,7 +23,7 @@ Bei folgenden Beispielen ist der Dev-Server Servor nicht erforderlich. Sie bezie
 **vite-esm-sfc:**
 
 Hierbei handelt es sich um ein Beispielprojekt, das mit [Vite](https://github.com/vitejs/vite "Bitte hier klicken um auf die Github-Seite von Vite zu gelangen") aufgesetzt wurde.
-Das Counter-Beispiel wurde hier ESM und Single File Components (SFCs) umgesetzt. 
+Das Counter-Beispiel wurde hier mit ESM und Single File Components (SFCs) umgesetzt. 
 
     cd vite-esm-sfc
     npm install
