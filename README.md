@@ -13,8 +13,28 @@ Beispiel:
     cd listing-1
     npx servor --browse --reload
 
-**Listing 6-x:**
 
-XXX
+
+Bei folgenden Beispielen ist der Dev-Server Servor nicht erforderlich. Sie beziehen sich im Artikel folgende Abschnitte:
+
+* SFCs und JSX nicht ohne vorheriges Kompilieren!
+* JSX" 
+
+**vite-esm-sfc:**
+
+Hierbei handelt es sich um ein Beispielprojekt, das mit [Vite](https://github.com/vitejs/vite "Bitte hier klicken um auf die Github-Seite von Vite zu gelangen") aufgesetzt wurde.
+Das Counter-Beispiel wurde hier ESM und Single File Components (SFCs) umgesetzt. 
+
+    cd vite-esm-sfc
+    npm install
+    npm run dev
     
 
+**vite-esm-jsx:**
+
+Hierbei handelt es sich um ein Beispielprojekt, das mit [Vite](https://github.com/vitejs/vite "Bitte hier klicken um auf die Github-Seite von Vite zu gelangen") aufgesetzt wurde.
+Das Counter-Beispiel wurde hier mit ESM und JSX umgesetzt. 
+
+    cd vite-esm-sfc
+    npm install
+    npm run dev
